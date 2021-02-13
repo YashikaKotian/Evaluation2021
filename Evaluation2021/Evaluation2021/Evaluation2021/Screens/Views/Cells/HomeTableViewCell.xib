@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeTableViewCell" rowHeight="44" id="KGk-i7-Jjw" customClass="HomeTableViewCell" customModule="Evaluation2021" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="210"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="210"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xz2-B3-D43">
+                        <rect key="frame" x="0.0" y="5" width="320" height="200"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Oval" translatesAutoresizingMaskIntoConstraints="NO" id="sUt-B6-Rdv">
+                        <rect key="frame" x="10" y="161" width="36" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="Bxa-bv-P1O"/>
+                            <constraint firstAttribute="width" constant="36" id="fLf-Zm-Vww"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwX-sx-A4Q">
+                        <rect key="frame" x="56" y="179" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1SF-1p-RAS">
+                        <rect key="frame" x="278" y="20" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="efB-kx-MPl"/>
+                            <constraint firstAttribute="height" constant="22" id="rC3-aS-kQ8"/>
+                        </constraints>
+                        <state key="normal" image="favUnselected"/>
+                        <connections>
+                            <action selector="favTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Ekk-FG-v7t"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRq-bk-WOM">
+                        <rect key="frame" x="128" y="73" width="64" height="64"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="64" id="KZ6-CV-P87"/>
+                            <constraint firstAttribute="width" constant="64" id="mbJ-rf-vBd"/>
+                        </constraints>
+                        <state key="normal" image="playIcon"/>
+                        <connections>
+                            <action selector="playButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="eh6-3C-bE8"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sUt-B6-Rdv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="12v-li-UAL"/>
+                    <constraint firstItem="iRq-bk-WOM" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="7e0-8D-6bU"/>
+                    <constraint firstAttribute="trailing" secondItem="1SF-1p-RAS" secondAttribute="trailing" constant="20" id="Cwf-z5-KQH"/>
+                    <constraint firstAttribute="bottom" secondItem="xz2-B3-D43" secondAttribute="bottom" constant="5" id="EGg-1w-gog"/>
+                    <constraint firstAttribute="bottom" secondItem="sUt-B6-Rdv" secondAttribute="bottom" constant="13" id="EdP-ox-uhw"/>
+                    <constraint firstItem="pwX-sx-A4Q" firstAttribute="centerY" secondItem="sUt-B6-Rdv" secondAttribute="centerY" id="Gd0-SI-b0J"/>
+                    <constraint firstItem="xz2-B3-D43" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="TCk-WI-zDg"/>
+                    <constraint firstItem="iRq-bk-WOM" firstAttribute="centerY" secondItem="xz2-B3-D43" secondAttribute="centerY" id="Yox-eb-jZF"/>
+                    <constraint firstItem="xz2-B3-D43" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="ry4-Ah-Mde"/>
+                    <constraint firstAttribute="trailing" secondItem="xz2-B3-D43" secondAttribute="trailing" id="xdq-Lb-dbH"/>
+                    <constraint firstItem="pwX-sx-A4Q" firstAttribute="leading" secondItem="sUt-B6-Rdv" secondAttribute="trailing" constant="10" id="zbY-FK-chA"/>
+                    <constraint firstItem="1SF-1p-RAS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="zuQ-Go-HAJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bgImageView" destination="xz2-B3-D43" id="yYB-zz-tIe"/>
+                <outlet property="favButton" destination="1SF-1p-RAS" id="rrV-AR-CoK"/>
+                <outlet property="profileImageView" destination="sUt-B6-Rdv" id="gra-W9-OrR"/>
+                <outlet property="userNameLabel" destination="pwX-sx-A4Q" id="aey-Cu-PgP"/>
+                <outlet property="videoPlayButton" destination="iRq-bk-WOM" id="YHO-Mm-SL1"/>
+            </connections>
+            <point key="canvasLocation" x="512" y="106"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Oval" width="36" height="36"/>
+        <image name="favUnselected" width="24" height="22"/>
+        <image name="playIcon" width="64" height="64"/>
+    </resources>
+</document>
